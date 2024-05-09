@@ -1,4 +1,4 @@
-use std::{default, io, time::Duration};
+use std::{io, time::Duration};
 
 use bollard::{
     auth::DockerCredentials,
