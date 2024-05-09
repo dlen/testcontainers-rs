@@ -392,7 +392,7 @@ mod tests {
             .with_wait_for(WaitFor::seconds(1));
 
         let container = RunnableImage::from(web_server.clone())
-            .with_network("test")
+            .with_network("bridge")
             .start()
             .await;
 
