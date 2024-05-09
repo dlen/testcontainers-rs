@@ -58,6 +58,7 @@ jobs:
           sudo cp ./.github/docker.override.conf /etc/systemd/system/docker.service.d/override.conf
           sudo systemctl daemon-reload
           sudo systemctl restart docker
+          sudo docker network ls
       - uses: taiki-e/install-action@v2
         with:
           tool: cargo-hack
